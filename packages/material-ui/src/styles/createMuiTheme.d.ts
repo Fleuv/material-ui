@@ -42,4 +42,4 @@ export interface Theme {
   zIndex: ZIndex;
 }
 
-export default function createMuiTheme(options?: ThemeOptions): Theme;
+export default function createMuiTheme<S extends Theme>(options?: ThemeOptions): S;
